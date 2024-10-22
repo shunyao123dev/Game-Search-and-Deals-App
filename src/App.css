@@ -1,38 +1,86 @@
 .App {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchSection {
+  flex: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: cadetblue;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.dealsSection {
+  flex: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input,
+button {
+  border: none;
+  width: 300px;
+  height: 50px;
+  font-size: 22px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+input {
+  padding-left: 15px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.games {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  height: 155px;
+}
+
+.game {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  color: black;
+  border-radius: 7px;
+  background-color: bisque;
+  padding: 5px;
+}
+
+.game img {
+  width: 80%;
+  margin-top: 10px;
+}
+
+.dealsSection {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex: 50%;
+  align-items: center;
+}
+
+#deals {
+  background-color: cadetblue;
+  color: white;
+  width: 200px;
+  height: 200px;
 }
